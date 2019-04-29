@@ -4,3 +4,4 @@ Examples/FMNIST/fmnist_labels
 Examples/FMNIST/fmnist_with_labels.txt
 Examples/FMNIST/*.png
 Examples/FMNIST/fmnist*
+Examples/20ng/*.txt

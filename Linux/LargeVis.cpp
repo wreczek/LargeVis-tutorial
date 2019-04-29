@@ -576,6 +576,7 @@ void LargeVis::visualize_thread(int id)
 	real *cur = new real[out_dim];
 	real *err = new real[out_dim];
 	real grad_clip = 5.0;
+	int moja_zmienna = -1;
 	while (1)
 	{
 		if (edge_count > n_samples / n_threads + 2) break;
@@ -585,7 +586,9 @@ void LargeVis::visualize_thread(int id)
 			last_edge_count = edge_count;
 			cur_alpha = initial_alpha * (1 - edge_count_actual / (n_samples + 1.0));
 			if (cur_alpha < initial_alpha * 0.0001) cur_alpha = initial_alpha * 0.0001;
-			printf("%cFitting model\tAlpha: %f Progress: %.3lf%%", 13, cur_alpha, (real)edge_count_actual / (real)(n_samples + 1) * 100);
+			(moja_zmienna++)%100;
+			if (moja_zmienna % 100 == 0)
+				printf("%cFitting model\tAlpha: %f Progress: %.3lf%%", 13, cur_alpha, (real)edge_count_actual / (real)(n_samples + 1) * 100);
 			fflush(stdout);
 		}
 		p = sample_an_edge(gsl_rng_uniform(gsl_r), gsl_rng_uniform(gsl_r));
