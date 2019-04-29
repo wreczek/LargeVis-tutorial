@@ -1,2 +1,6 @@
 Examples/MNIST/mnist_vec784D.txt
 Examples/FMNIST/zalando_in_all.csv
+Examples/FMNIST/fmnist_labels
+Examples/FMNIST/fmnist_with_labels.txt
+Examples/FMNIST/*.png
+Examples/FMNIST/fmnist*
