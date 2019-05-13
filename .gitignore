@@ -8,7 +8,7 @@ Examples/FMNIST/fmnist*
 Examples/20ng/*.txt
 
 # jupyter notebook checkpoints
-/.ipynb_checkpoints
+.ipynb_checkpoints
 
 # others
 annoy_index_file
