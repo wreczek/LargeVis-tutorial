@@ -1,3 +1,4 @@
+# too large files, keep them in .zip
 Examples/MNIST/mnist_vec784D.txt
 Examples/FMNIST/zalando_in_all.csv
 Examples/FMNIST/fmnist_labels
@@ -5,3 +6,9 @@ Examples/FMNIST/fmnist_with_labels.txt
 Examples/FMNIST/*.png
 Examples/FMNIST/fmnist*
 Examples/20ng/*.txt
+
+# jupyter notebook checkpoints
+/.ipynb_checkpoints
+
+# others
+annoy_index_file
